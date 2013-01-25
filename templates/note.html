@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>our note</title>
+<link rel="stylesheet" href="/css/bootstrap.css" />
+<link rel="stylesheet" href="/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="/kindeditor/plugins/code/prettify.css" />
+</head>
+<body style="background-color:#CCC">
+			<div class="btn_div">
+            	<button class="btn btn-primary" type="button" id="create_btn">新建笔记</button>
+                <button class="btn btn-primary" type="button" id="edit_btn">编辑笔记</button>
+                <button class="btn btn-primary" type="button" id="del_btn">删除笔记</button>
+                <button class="btn btn-primary" type="button" id="save_btn">保存笔记</button>
+                <a href="https://api.weibo.com/oauth2/authorize?redirect_uri=http%3A//219.244.118.185%3A8000/home/&response_type=code&client_id=873914685"><img src="/img/signin.png" /></a>
+                <hr/>
+            </div>
+            
+			<div class="tabbable tabs-left">
+              <ul class="nav nav-tabs" style="width:25%">
+              </ul>
+              
+              <div class="tab-content">
+                <div class="tab-pane" id="edit">
+               	  <div id="edit_id" style="display:none"></div>
+                  <textarea rows="1" id="edit_subject" name="edit_subject" style="width:95%"></textarea>
+                  <textarea id="edit_content" name="edit_content" style="width:95%;height:98%"></textarea>
+                </div>
+                <div class="tab-pane" id="show">
+                	<div id="show_id" style="display:none"></div>
+                	<div id="show_subject" style="display:none"></div>
+                    <br/>
+                    <div id="show_content">
+                  	</div>
+                </div>
+              </div>
+            </div> 
+<script src="/js/jquery-1.8.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery-ui.js"></script>
+<script charset="utf-8" src="/kindeditor/kindeditor.js"></script>
+<script charset="utf-8" src="/kindeditor/lang/zh_CN.js"></script>
+<script charset="utf-8" src="/kindeditor/plugins/code/prettify.js"></script>
+<script charset="utf-8" src="/js/global_function.js"></script>
+<script src="/js/note.js"></script>
+</body>
+</html>
